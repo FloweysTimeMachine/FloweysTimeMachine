@@ -19,7 +19,7 @@
 
   <body>
     <nav class="grid-cols-7">
-      <div class="col-span-2">
+      <div class="col-span-2 mt-4">
         <p>Built-in Presets</p>
         <div class="grid-cols-4 mt-1.5">
           <select id="builtinpresetselect" class="col-span-3"></select>
@@ -28,27 +28,27 @@
 
         <div class="grid-cols-2 mt-1.5">
           <button
-            title="When this file is present, the world is in the 'deleted' state that is triggered when you complete a genocide run."
+            title="(system_information_962) When this file is present, the world is in the 'deleted' state that is triggered when you complete a genocide run."
             id="savesi2"
           >
             <span>sys_info_962</span>
           </button>
           <button
-            title="When this file is present, you have 'sold' your soul to get the world back after a genocide run."
+            title="(system_information_963) When this file is present, you have 'sold' your soul to get the world back after a genocide run."
             id="savesi3"
           >
             <span>sys_info_963</span>
           </button>
         </div>
+        <a class="absolute" href="help.html" style="margin-top: 2px"
+          >What is this?</a
+        >
       </div>
 
-      <header class="col-span-3">
-        <img src="res/flowey_nice.png" draggable="false" id="floweyimg" alt="floweyimg">
-        <h1 style="margin-left: 0.5rem">Flowey's<br>Time<br>Machine</h1>
-      </header>
+      <header class="col-span-3"></header>
 
-      <div class="col-span-2">
-        <p>Your Presets</p>
+      <div class="col-span-2 mt-4" style="position: relative">
+        <p style="text-align: right">Your Presets</p>
         <div class="grid-cols-4 mt-1.5">
           <select id="userpresetselect" class="col-span-2"></select>
           <button class="disabled" id="userpresetload">Load</button>
@@ -60,19 +60,15 @@
             <button class="disabled" id="userpresetexport">Export</button>
           </div>
         </div>
+        <div class="absolute checkbox" style="margin-top: 6px; right: 0">
+          <input id="mute" type="checkbox" />
+          <label>Mute</label>
+        </div>
       </div>
     </nav>
 
-    <div class="flex" style="margin-top: 0.25rem; gap: 0.5rem; justify-content: space-between;">
-      <a href="help.html">What is this?</a>
-      <div class="checkbox">
-        <input id="mute" type="checkbox" />
-        <label>Mute</label>
-      </div>
-    </div>
-
-    <div style="margin-top: 3rem;">
-      <div>
+    <div>
+      <div class="mt-8">
         <h1>Persistent Data (undertale.ini)</h1>
         <p>Things that UNDERTALE remembers throughout multiple playthroughs</p>
       </div>
@@ -164,7 +160,7 @@
         </div>
       </section>
 
-      <div class="mt-6">
+      <div class="mt-8">
         <h1>SAVE Data (file0)</h1>
         <p>This is what gets SAVED at SAVE points</p>
       </div>
@@ -197,7 +193,7 @@
             <label>Fun</label>
             <label>LOVE</label>
             <label>Kills</label>
-            <label>&nbsp;</label>
+            <label>? kills</label>
             <input
               id="sav-fun"
               placeholder="Fun"
@@ -413,7 +409,7 @@
               >True lab exited</label
             >
           </div>
-          <div class="checkbox" style="margin-bottom: 0.5rem">
+          <div class="checkbox" style="margin-bottom: 1rem">
             <input id="sav-defeatedasriel" type="checkbox" />
             <label
               title="Defeated Asriel (true pacifist finished)"
@@ -434,10 +430,6 @@
           <div class="grid-cols-2">
             <table>
               <tr>
-                <td>Value</th>
-                <td>Effect</th>
-              </tr>
-              <tr>
                 <td>2-39</td>
                 <td>Wrong number</td>
               </tr>
@@ -453,12 +445,12 @@
                 <td>56-57</td>
                 <td>Nightmare mode</td>
               </tr>
-            </table>
-            <table>
               <tr>
                 <td>61-63</td>
                 <td>Gaster followers</td>
               </tr>
+            </table>
+            <table>
               <tr>
                 <td>65</td>
                 <td>Sound test room</td>

@@ -45,12 +45,10 @@ a {
   font-size: 1.25rem;
   color: #f4e656;
   text-decoration: none;
-  margin: 0;
 }
 
 a:hover {
   color: #f9a64c;
-  margin: 0;
 }
 
 p {
@@ -58,10 +56,13 @@ p {
 }
 
 header {
-  display: flex;
-  margin: auto;
-  /* align-items: center;
-  justify-content: center; */
+  background-image: url("res/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 225px;
+  box-shadow: 0 0 40px 0px black inset, 0 0 40px 0px black inset;
+  margin: -1.75rem 0;
 }
 
 section {
@@ -76,10 +77,17 @@ fieldset {
   background: #000;
   border: 3px solid #fff;
   padding-bottom: 0.9rem;
+  border-radius: 2px;
+  box-shadow: 2px 2px #9da2c4 inset, -2px -2px #9da2c4 inset;
 }
 
 legend {
   font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0.38rem;
+  background: #000;
+  letter-spacing: 1.5px;
 }
 
 .disabled {
@@ -182,12 +190,20 @@ button,
   margin-top: 0.325rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .grid {
@@ -243,4 +259,3 @@ th {
 td:first-child {
   color: #bbbbbb;
 }
-
